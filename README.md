@@ -13,5 +13,5 @@ step 1 :
 step 2:  
   Add the dependency:  
   dependencies {  
-	        compile 'com.github.allen252027913:android:1.0'  
+	        compile 'com.github.allen252027913:android:4.0'  
   }  

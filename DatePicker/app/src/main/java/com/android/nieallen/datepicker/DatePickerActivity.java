@@ -1,7 +1,5 @@
 package com.android.nieallen.datepicker;
 
-import com.android.nieallen.datepicker.R;
-
 import android.app.TimePickerDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,7 +11,7 @@ import android.widget.TimePicker;
 import java.util.Calendar;
 import java.util.Date;
 
-public class DataPickerActivity extends AppCompatActivity {
+public class DatePickerActivity extends AppCompatActivity {
 
     private DatePicker mDatePicker;
     private TextView mStartTimeTip;
@@ -56,7 +54,7 @@ public class DataPickerActivity extends AppCompatActivity {
                 mIsStartTimeSelected = true;
                 mStartTime.setTextColor(getResources().getColor(R.color.colorAccent));
                 mEndTime.setTextColor(getResources().getColor(R.color.colorPrimary));
-                new TimePickerDialog(DataPickerActivity.this,
+                new TimePickerDialog(DatePickerActivity.this,
                         new TimePickerDialog.OnTimeSetListener() {
                             @Override
                             public void onTimeSet(TimePicker timePicker, int day, int minute) {
@@ -74,7 +72,7 @@ public class DataPickerActivity extends AppCompatActivity {
                 mIsStartTimeSelected = false;
                 mStartTime.setTextColor(getResources().getColor(R.color.colorPrimary));
                 mEndTime.setTextColor(getResources().getColor(R.color.colorAccent));
-                new TimePickerDialog(DataPickerActivity.this,
+                new TimePickerDialog(DatePickerActivity.this,
                         new TimePickerDialog.OnTimeSetListener() {
                             @Override
                             public void onTimeSet(TimePicker timePicker, int day, int minute) {
