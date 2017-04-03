@@ -1,6 +1,6 @@
 # android
-  DatePicker first time/n
-  step 1 :
+DatePicker first time
+step 1 :
   Add it in your root build.gradle at the end of repositories:
   allprojects {
 		repositories {
@@ -9,7 +9,7 @@
 		}
   }
 
-  step 2:
+step 2:
   Add the dependency:
   dependencies {
 	        compile 'com.github.allen252027913:android:1.0'
